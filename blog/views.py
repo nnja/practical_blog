@@ -7,7 +7,7 @@ from blog.models import Post
 
 def about(request):
     template = loader.get_template("blog/about.html")
-    return HttpResponse(template.render(request))
+    return HttpResponse(template.render({}, request))
 
 
 def index(request):
